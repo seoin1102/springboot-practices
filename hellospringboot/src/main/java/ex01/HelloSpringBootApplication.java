@@ -15,12 +15,6 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class HelloSpringBootApplication {
-	
-	@Bean
-	public ApplicationRunner applicationRunner() {
-		return new MyComponent();
-	}
-	
 	public static void main(String[]args) {
 		/*
 		 * SpringApplication.run(...)안에서 일어나는 일(bootstrap):
