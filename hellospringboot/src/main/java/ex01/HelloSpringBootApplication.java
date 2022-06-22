@@ -33,8 +33,7 @@ public class HelloSpringBootApplication {
 		 * 		- 내장(embeded) 서버(TomcatEmbededServletContainer) 인스턴스 생성
 		 *		- 서버 인스턴스에 웹 애플리케이션 배포
 		 *		- 서버 인스턴스 실행
-		 * 5. ApplicationRunner 인터페이스를 구현한 빈을 찾아서 실행.
-		 * 6.
+		 * 5. ApplicationRunner 인터페이스를 구현한 빈을 찾아서 실행(run 호출).
 		 * */
 		//ConfigurableApplicationContext c = null;
 
@@ -45,6 +44,7 @@ public class HelloSpringBootApplication {
 //		}finally {
 //			c.close();
 //		}
+		
 //		try ~ with ~ resource
 		try (ConfigurableApplicationContext c = SpringApplication.run(HelloSpringBootApplication.class, args)){
 			
